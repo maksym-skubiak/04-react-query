@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import type { MouseEvent } from "react";
+
 import type { Movie } from "../../types/movie";
+
 import css from "./MovieModal.module.css";
 
 interface MovieModalProps {
@@ -17,9 +19,9 @@ function MovieModal({ movie, onClose }: MovieModalProps) {
       }
     };
 
-    document.addEventListener("keydown", handleKeyDown);
-
     const originalOverflow = document.body.style.overflow;
+
+    document.addEventListener("keydown", handleKeyDown);
     document.body.style.overflow = "hidden";
 
     return () => {
