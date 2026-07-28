@@ -14,7 +14,7 @@ import MovieModal from "../MovieModal/MovieModal";
 import { fetchMovies } from "../../services/movieService";
 import type { Movie } from "../../types/movie";
 
-import css from "./App.module.css";
+import css from "./App.modele.css";
 
 type ModuleWithDefault<T> = {
   default: T;
